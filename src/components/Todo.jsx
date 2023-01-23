@@ -10,7 +10,7 @@ const Todo = ({ todos }) => {
             <li className="flex  justify-between bg-slate-200 p-4 my-2 capitalize ">
               <div className="flex ">
                 <input type="checkbox" />
-                <p className="ml-2 cursor-pointer">{todo}</p>
+                <p className="ml-2 cursor-pointer">{todo.text}</p>
               </div>
 
               <button className="cursor-pointer flex items-center">
@@ -20,7 +20,6 @@ const Todo = ({ todos }) => {
           );
         })}
       </ul>
-     
     </div>
   );
 };
