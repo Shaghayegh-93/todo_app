@@ -6,10 +6,7 @@ import { useEffect } from "react";
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { db } from "./firebase";
 
-
 function App() {
-  // console.log(process.env.REACT_APP_API_KEY);
-  // console.log(first);
   const [todos, setTodos] = useState([]);
   useEffect(() => {
     const q = query(collection(db, "todos"));
